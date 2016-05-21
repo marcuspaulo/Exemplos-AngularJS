@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="angular.min.js"></script>
+  </head>
+  <body>
+
+    <table style="width:100%">
+      <tr>
+        <td><h1>Ng-show</h1></td>
+        <td><h1>Ng-hide</h1></td> 
+        <td><h1>Ng-if</h1></td>
+      </tr>
+      <tr>
+        <td style="width: 25%"><img src="./imagens/esquilo.png" alt="Esquilo" height="28%" width="65%" ng-show="condicao"></td>
+        <td style="width: 25%"><img src="./imagens/ave.png" alt="Ave" height="30%" width="60%" ng-hide="condicao"></td>
+        <td style="width: 25%"><img src="./imagens/garca.png" alt="Garça" height="30%" width="60%" ng-if="condicao"></td>
+      </tr>
+    </table>
+
+    <button ng-click="condicao = true">Ativar</button>
+    <button ng-click="condicao = false">Desativar</button>
+   
+  </body>
+</html>

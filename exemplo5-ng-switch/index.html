@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<script src="angular.min.js"></script>
+<body ng-app="">
+
+Portal de Notícias
+<select ng-model="noticia">
+  <option value="carro">Carro
+  <option value="comida">Comida
+  <option value="viagens">Viagens
+</select>
+
+Portal de Notícias
+<div ng-switch="noticia">
+  <div ng-switch-when="carro">
+     <h1>Carro</h1>
+     <p>Informações sobre carros.</p>
+  </div>
+  <div ng-switch-when="comida">
+     <h1>Comida</h1>
+     <p>Receitas Deliciosas</p>
+  </div>
+  <div ng-switch-when="viagens">
+     <h1>Viagens</h1>
+     <p>Vamos falar sobre viagens. :-)</p>
+  </div>
+  <div ng-switch-default>
+     <h1>Escolha seu tópico</h1>
+     <p>Escolha seu tópico favorito.</p>
+  </div>
+</div>
+<hr>
+
+</body>
+</html>

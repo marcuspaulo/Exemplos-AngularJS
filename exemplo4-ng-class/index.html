@@ -1,0 +1,15 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/estilo.css">
+    <script src="angular.min.js"></script>
+  </head>
+  <body>
+    <h1><font ng-class="{'vermelho' : condicao == 'vermelho', 'verde' : condicao == 'verde' , 'azul' : condicao == 'azul'}">Ng-Class</font><h1>
+
+    <button ng-click="condicao = 'vermelho'">Vermelho</button>
+    <button ng-click="condicao = 'verde'">Verde</button>
+    <button ng-click="condicao = 'azul'">Azul</button>
+   
+  </body>
+</html>
